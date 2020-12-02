@@ -209,7 +209,7 @@ a{
   display: -ms-flexbox;
   display: flex;
   margin: 0 -30px;
-  padding-top: 20px;
+  padding-top: 40px;
   flex-wrap: wrap;
 }
 .services__column {
@@ -275,7 +275,7 @@ a{
     font-size: 110px;
   }
   .choise__content .h2__title-maintitle{
-    top: 95px;
+    top: 85px;
   }
 }
 @media(max-width: 800px){
@@ -286,9 +286,6 @@ a{
   text-align: center;
   margin: 0 auto;
   max-width: 270px;
-}
-.wrapper__services .services{
-  padding-top: 50px !important;
 }
 
 }
@@ -305,16 +302,32 @@ a{
     font-size: 65px;
   }
 }
-@media(max-width: 550px){
+@media(max-width: 590px){
   .services__column {
     flex:0 1 100%;
   }
   .choise__content .h2__title--back{
-    font-size: 40px;
+    font-size: 60px;
+        margin-left: 32px;
   }
   .choise__content .h2__title-maintitle{
     top: 55px;
   }
+  .choise__content .h2__title-maintitle{
+    top: 100px !important;
+  }
+}
+@media (max-width: 490px){
+.choise__content .h2__title--back{
+  font-size: 45px;
+}
+.choise__content .h2__title-maintitle{
+    top: 77px !important;
+
+}
+.wrapper__services .services{
+  padding-top: 50px !important;
+}
 }
 .aboutus .aboutus__main .aboutus__nav .nav__links {
   display: -webkit-box;
@@ -769,7 +782,7 @@ a{
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  margin-top: 2.333em;
+  margin-top: 3.333em;
 }
 .wrapper__numbers .numbers .numbers__content .block {
   background-color: #E6F5FF;
@@ -867,7 +880,7 @@ a{
 }
 .wrapper__contacts .contacts {
   margin: auto;
-
+    padding-top: 30px;
 }
 .wrapper__contacts .contacts .contacts__content {
   margin-top: 0.9em;
@@ -962,6 +975,9 @@ a{
     font-size: 60px;
 padding-bottom: 45px !important;
 
+  }
+  .contacts>.h2__title{
+    top: 89px;
   }
 }
 .contacts__items {
@@ -2665,6 +2681,7 @@ body {
 }
 .wrapper__contacts {
   margin-top: 0px;
+  padding-top: 50px;
 }
 .wrapper {
   overflow-x: hidden;
@@ -3259,12 +3276,20 @@ body {
     width: 100%;
   }
 }
+@media(max-width: 768px){
+  .wrapper__contacts{
+    padding-top: 50px;
+  }
+}
 @media (max-width: 700px){
     .nav__logo{
        margin-left: 15%;
   }
   .wrapper__choise .choise__content .content__items .item{
     margin-left: 30px;
+  }
+    .choise__content .h2__title-maintitle{
+    top: 73px;
   }
 }
 @media (max-width: 390px){
