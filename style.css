@@ -3337,6 +3337,7 @@ body {
   height: 100%;
   overflow: auto;
   z-index: 999;
+
 }
 .popup a, .popup a:visited, .popup a:hover, .popup a:active {
   color: inherit;
@@ -3392,6 +3393,19 @@ body {
   background-color: white;
   padding: 60px 70px;
 }
+.popup-works .popup-content{
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  max-width: 580px;
+  margin: 0px auto;
+  background-color: white;
+  padding: 28px 26px 30px;
+}
 .popup__title {
   font-style: normal;
   font-weight: bold;
@@ -3402,6 +3416,29 @@ body {
   color: #F4522F;
   margin-bottom: 1.067em;
 
+}
+.link__sites{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.105em;
+  margin-right: 5px;
+  position: relative;
+}
+.link__sites:after{
+  content: '';
+  background: url('img/link.svg') no-repeat right;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+.popup__subtitle{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.105em;
 }
 .popup-callback .popup__title{
   text-align: center;
@@ -3466,7 +3503,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
-      margin-bottom: 40px;
+  margin-bottom: 40px;
   line-height: 130%;
   text-align: center;
   letter-spacing: 0.105em;
@@ -3531,6 +3568,10 @@ body {
   .popup-callback .popup-table > .cell{
     padding: 10px 20px;
   }
+  .popup-works .popup-table > .cell{
+    padding: 10px 20px;
+
+  }
 }
 @media (max-width: 530px){
   .wrapper__choise .choise__content .content__items .item p{
@@ -3542,6 +3583,13 @@ body {
     font-size: 15px;
     margin-bottom: 1.067em;
     padding-top: 0;
+  }
+  .link__sites{
+    font-size: 15px;
+  }
+  .link__sites:after{
+    width: 30px;
+    height: 30px;
   }
   .popup__title{
     margin-bottom: 0.067em;
