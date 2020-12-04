@@ -87,9 +87,36 @@ $(window).scroll(function(){
 
 var isResizeble = false;
 
+    if($(window).innerWidth() <= 980){
+         $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            var x = $(".jumbotron__content").position();
+            if (y>50) {
+                $('.aboutus__nav-wrapper').fadeIn().css({"position":"fixed", "background" : "#fff", "z-index" : "200", "width" : "100%"});
+                
+            } else {
+                $('.aboutus__nav-wrapper').css({"position" : "static", "background" : "none"});
+            }
+        });
+        $('a').click(function (e) { 
+            if(!isiPhone){
+               
+                
+            }else{
+               
+                $('.wrapper__menu').css({display : `none`});
+                $('body').css({"overflow":"scroll"});
+            }
+        });
+    }
+
     var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
+    if(isSafari){
+        $('.container').css({zoom : '1.2'});
+        $('.wrapper__aside').css({height : '100vh'});
+    }
 
 });
 
