@@ -235,6 +235,9 @@ a{
   padding-top: 40px;
   flex-wrap: wrap;
 }
+.icon-calls{
+  padding: 10px 0px;
+}
 .services__column {
   flex: 0 1 33.333%;
   padding: 0 30px;
