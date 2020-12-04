@@ -37,6 +37,7 @@ body {
   height: -moz-max-content;
   height: -o-max-content;
   height: max-content;
+  height: 100%;
   width: 100%;
   overflow-x: hidden;
   margin: 0 auto;
