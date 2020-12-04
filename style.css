@@ -225,7 +225,7 @@ a{
   color: #Fff;
 }
 .footer__text a{
-      color: #FFFFFF;
+  color: #FFFFFF;
 }
 .services__row {
   display: -webkit-box;
@@ -1215,7 +1215,7 @@ a{
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-      margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .wrapper__footer .footer .contact__col .contacts__items .item{
   height: 55px;
@@ -1895,8 +1895,8 @@ a{
  }
  .contacts__items .item{
   margin: 0;
- }
- .ser{
+}
+.ser{
   position: absolute;
   top: 340px;
 }
@@ -3356,11 +3356,12 @@ body {
   height: 100%;
   table-layout: fixed;
 }
-.popup-aboutuss .popup-table > .cell {
+.popup-table > .cell {
   height: 100%;
   vertical-align: middle;
   padding: 10px 100px;
 }
+
 
 .popup-aboutuss .popup-content {
   -ms-transform: scale(0);
@@ -3375,7 +3376,19 @@ body {
   background-color: white;
   padding: 29px 40px;
 }
-
+.popup-callback .popup-content{
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  max-width: 516px;
+  margin: 0px auto;
+  background-color: white;
+  padding: 60px 70px;
+}
 .popup__title {
   font-style: normal;
   font-weight: bold;
@@ -3387,7 +3400,9 @@ body {
   margin-bottom: 1.067em;
 
 }
-
+.popup-callback .popup__title{
+  text-align: center;
+}
 .popup__txt {
   font-style: normal;
   font-weight: 300;
@@ -3420,7 +3435,46 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+.popup__tel {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 130%;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.105em;
+}
+.popup__tel span{
+  color: #F4522F;
+}
 
+.popup__social {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.105em;
+  color: #021A58;
+  white-space: nowrap;
+  margin: 4px 0 15px;
+}
+.popup__mail {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+      margin-bottom: 40px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.105em;
+}
+
+.popup__mail span{
+ color: #F4522F;
+}
+.popup-callback .logo{
+  text-align: center;
+}
 @media (max-width: 993px){
   .wrapper__choise .choise__content .content__items{
     width: inherit;
@@ -3471,6 +3525,9 @@ body {
   .popup-aboutuss .popup-table > .cell{
     padding: 10px 50px;
   }
+  .popup-callback .popup-table > .cell{
+    padding: 10px 20px;
+  }
 }
 @media (max-width: 530px){
   .wrapper__choise .choise__content .content__items .item p{
@@ -3487,16 +3544,31 @@ body {
     margin-bottom: 0.067em;
     font-size: 23px;
   }
+  .popup-callback .popup__title{
+    margin-bottom: 1.067em;
+  }
   .popup__subtxt{
     font-size: 15px;
     margin-bottom: 1.067em;
   }
   .popup__slogan{
     font-size: 16px;
-        margin-bottom: 1.067em;
+    margin-bottom: 1.067em;
   }
   .popup-aboutuss .popup-content{
     padding: 29px 30px;
+  }
+  .popup-callback .popup-content{
+    padding: 60px 30px;
+  }
+  .popup__tel{
+    font-size: 20px;
+  }
+  .popup__social{
+    font-size: 20px;
+  }
+  .popup__mail{
+    font-size: 20px;
   }
 }
 @media (max-width: 390px){
