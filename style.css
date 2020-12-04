@@ -34,6 +34,8 @@ html.lock{
 }
 body {
   height: -webkit-max-content;
+  height: -moz-max-content;
+  height: -o-max-content;
   height: max-content;
   width: 100%;
   overflow-x: hidden;
