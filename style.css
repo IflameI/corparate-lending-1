@@ -10,7 +10,6 @@
  box-sizing: border-box;
  padding:0;
 }
-
 body {
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -26,11 +25,17 @@ body {
   zoom: 80%;
   height: 500px;
 }
+body a, body a:visited, body a:hover, body a:active {
+  text-decoration: none;
+  color: inherit;
+}
 html {
   overflow-x: hidden;
   width: 100%;
 }
-
+html.lock{
+  overflow: hidden;
+}
 body {
   height: -webkit-max-content;
   height: max-content;
@@ -39,6 +44,8 @@ body {
   margin: 0 auto;
   position: relative;
 }
+
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -186,6 +193,9 @@ a{
   height: 98px;
 
 }
+.aboutus .aboutus__main .aboutus__jumbotron .jumbotron__content .content__buttons a{
+  color: #fff;
+}
 .h2__title-maintitle{
   margin-bottom: 20px;
   position: relative;
@@ -203,6 +213,19 @@ a{
   .h2__title--back-big{
     font-size: 30px !important;
   }
+  .h2__title-maintitle-big{
+    top: 42px !important;
+  }
+
+}
+.item__subtitle a{
+ color: #021A58;
+}
+.wrapper__footer .footer .contact__col .item .item__subtitle a{
+  color: #Fff;
+}
+.footer__text a{
+      color: #FFFFFF;
 }
 .services__row {
   display: -webkit-box;
@@ -306,8 +329,12 @@ a{
   .contacts>.h2__title{
     top: 70px !important;
   }
+  .contacts>.h2__title-maintitle-big{
+    top: 42px !important;
+  }
 }
 @media(max-width: 590px){
+
   .h2__title--back{
     font-size: 65px;
   }
@@ -317,6 +344,9 @@ a{
   }
   .contacts>.h2__title {
     top: 59px !important;
+  }
+  .contacts>.h2__title-maintitle-big{
+    top: 42px !important;
   }
   .h2__title-maintitle{
     top: 60px;
@@ -331,6 +361,9 @@ a{
   .choise__content .h2__title-maintitle{
     top: 56px !important; 
 
+  }
+  .choise__content .h2__title-maintitle-big{
+    top: 42px !important;
   }
 }
 @media (max-width: 490px){
@@ -1167,8 +1200,13 @@ a{
   .wrapper__footer .footer .footer__column .footer__text {
     font-size: 16px;
   }
+  .h2__title--back-en{
+    font-size: 51px !important;
+  }
+  .h2__title--en{
+    font-size: 31px !important;
+  }
 }
-
 .wrapper__footer .footer .footer__column .footer__text:hover {
   cursor: pointer;
 }
@@ -1177,6 +1215,7 @@ a{
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+      margin-bottom: 15px;
 }
 .wrapper__footer .footer .contact__col .contacts__items .item{
   height: 55px;
@@ -1489,6 +1528,7 @@ a{
   color: #F4522F;
   margin-bottom: 1.067em;
 }
+
 .alert__wrapper__aboutus .alert__aboutus .aboutus__content p {
   font-style: normal;
   font-weight: 300;
@@ -1853,6 +1893,9 @@ a{
   .nav__logo{
    margin-left: 25%;
  }
+ .contacts__items .item{
+  margin: 0;
+ }
  .ser{
   position: absolute;
   top: 340px;
@@ -1892,6 +1935,9 @@ a{
 .wrapper__menu .content__info li .second {
   font-size: 25px;
   color: #F4522F;
+}
+.wrapper__numbers .numbers .h2__title-maintitle-big{
+  top:72px !important;
 }
 .wrapper__menu .menu__language {
   align-self: center;
@@ -3260,6 +3306,121 @@ body {
 }
 }
 
+.table {
+  display: table;
+  font-size: 0;
+  width: 100%;
+}
+
+.trow {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+}
+.cell.full {
+  width: 100%;
+}
+
+.popup {
+  -webkit-overflow-scrolling: touch;
+  background-color: rgba(196, 196, 196, 0.6);
+  display: none;
+  position: fixed !important;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 999;
+}
+.popup a, .popup a:visited, .popup a:hover, .popup a:active {
+  color: inherit;
+}
+.popup.active .popup-content {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.popup.show {
+  display: block;
+}
+.popup.show .popup-content {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.popup-table {
+  height: 100%;
+  table-layout: fixed;
+}
+.popup-aboutuss .popup-table > .cell {
+  height: 100%;
+  vertical-align: middle;
+  padding: 10px 100px;
+}
+
+.popup-aboutuss .popup-content {
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  max-width: 1170px;
+  margin: 0px auto;
+  background-color: white;
+  padding: 29px 40px;
+}
+
+.popup__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 130%;
+  /* or 32px */
+  letter-spacing: 0.105em;
+  color: #F4522F;
+  margin-bottom: 1.067em;
+
+}
+
+.popup__txt {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  letter-spacing: 0.105em;
+  margin-bottom: 2.067em;
+  padding-top: 0.2em;
+}
+.popup__subtxt{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  letter-spacing: 0.105em;
+  margin-bottom: 3.067em;
+}
+.popup-close {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 10px;
+  right: 27px;
+  cursor: pointer;
+}
+.popup__slogan{
+  margin-bottom: 2.067em;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 @media (max-width: 993px){
   .wrapper__choise .choise__content .content__items{
     width: inherit;
@@ -3269,6 +3430,9 @@ body {
   }
   .wrapper__choise .choise__content .content__items .item .item__content{
     width: 100%;
+  }
+  .wrapper__choise .choise__content .content__items .item p{
+    min-width: 450px;
   }
   .wrapper__choise .rect{
     width: 100% !important;
@@ -3289,6 +3453,11 @@ body {
     padding-top: 50px;
   }
 }
+@media (max-width: 740px){
+  .wrapper__numbers .numbers .h2__title-maintitle-big{
+    top: 55px !important;
+  }
+}
 @media (max-width: 700px){
   .nav__logo{
    margin-left: 15%;
@@ -3297,6 +3466,38 @@ body {
  .choise__content .h2__title-maintitle{
   top: 73px;
 }
+}
+@media (max-width: 590px){
+  .popup-aboutuss .popup-table > .cell{
+    padding: 10px 50px;
+  }
+}
+@media (max-width: 530px){
+  .wrapper__choise .choise__content .content__items .item p{
+    min-width: inherit;
+  }
+}
+@media (max-width: 460px){
+  .popup__txt{
+    font-size: 15px;
+    margin-bottom: 1.067em;
+    padding-top: 0;
+  }
+  .popup__title{
+    margin-bottom: 0.067em;
+    font-size: 23px;
+  }
+  .popup__subtxt{
+    font-size: 15px;
+    margin-bottom: 1.067em;
+  }
+  .popup__slogan{
+    font-size: 16px;
+        margin-bottom: 1.067em;
+  }
+  .popup-aboutuss .popup-content{
+    padding: 29px 30px;
+  }
 }
 @media (max-width: 390px){
   .nav__logo{
