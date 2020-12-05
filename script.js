@@ -120,7 +120,7 @@ if (location.hash) {
     if ($('.popup-' + hsh).length > 0) {
         popupOpen(hsh);
     } else if ($('div.' + hsh).length > 0) {
-        $('body,html').animate({ scrollTop: $('div.' + hsh).offset().top, }, 500, function () { });
+        $("html, body").animate({scrollTop: scrollingDistance}, 500);
     }
 }
 $('.wrapper').addClass('loaded');
