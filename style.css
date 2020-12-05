@@ -173,9 +173,17 @@ a{
   display: -ms-flexbox;
   display: flex;
 }
+.aboutus__nav-wrapper{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 200;
+    width: 100%;
+        transition: all 0.1s ease 0s;
+}
 .aboutus .aboutus__main {
   width: 100%;
   font-size: 18px;
+  
 
 }
 .aboutus .aboutus__main .aboutus__nav {
@@ -549,6 +557,7 @@ a{
 }
 .aboutus .aboutus__main .aboutus__jumbotron {
   position: relative;
+  top: 80px;
 }
 .aboutus .aboutus__main .aboutus__jumbotron .jumbotron__img {
   position: absolute;
@@ -617,6 +626,7 @@ a{
   margin: 0px auto;
       padding-top: 45px;
   width: -webkit-max-content;
+      padding-bottom: 115px;
   width: -moz-max-content;
   width: max-content;
   -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
@@ -2754,6 +2764,9 @@ body {
 .wrapper__contacts {
   margin-top: 0px;
   padding-top: 50px;
+}
+.aboutus .aboutus__main .aboutus__jumbotron .content__mousescroll{
+  padding-bottom: 0px;
 }
 .wrapper__form .h2__title{
  padding-top: 15%;

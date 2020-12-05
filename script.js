@@ -90,10 +90,10 @@ function isiPhone(){
             var y = $(this).scrollTop();
             var x = $(".jumbotron__content").position();
             if (y>50) {
-                $('.aboutus__nav-wrapper').fadeIn().css({"position":"fixed", "background" : "#fff", "z-index" : "200", "width" : "100%"});
+                $('.aboutus__nav-wrapper').fadeIn().css({"position":"fixed", "background-color" : "rgba(255, 255, 255, 1)", "z-index" : "200", "width" : "100%"});
                 
             } else {
-                $('.aboutus__nav-wrapper').css({"position" : "static", "background" : "none"});
+                $('.aboutus__nav-wrapper').css({"position" : "absolute", "background-color" : "rgba(255, 255, 255, 0)"});
             }
         });
         $('a').click(function (e) { 
