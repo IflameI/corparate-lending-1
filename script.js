@@ -52,23 +52,16 @@ $('.alert__wrapper__call').css({display : `flex`});
         console.log('close')
         $('.alert').css({display : `none`});
         $('.wrapper__menu').css({display : `none`});
-        $('body').css({"overflow":"scroll"});
-        $("html").css({"overflow":"scroll"});
     });
      $('.links1').click(function (e) { 
         $('.wrapper__menu').css({display : `none`});
-       $('body').css({"overflow":"hidden"});
     });
     $('.link').click(function (e) { 
         $('.wrapper__menu').css({display : `none`});
-        $('body').css({"overflow":"scroll"});
-        $('html').css({"overflow":"scroll"});
     });
    
     $('.menulogo').click(function (e) { 
         $('.wrapper__menu').css({display : `none`});
-        $('body').css({"overflow":"scroll"});
-        $("html").css({"overflow":"scroll"});
     });
 
     if(document.documentElement.scroll>1100){
@@ -93,7 +86,6 @@ function isiPhone(){
     );
 }
 
-    if($(window).innerWidth() <= 980){
          $(document).scroll(function () {
             var y = $(this).scrollTop();
             var x = $(".jumbotron__content").position();
@@ -111,10 +103,8 @@ function isiPhone(){
             }else{
                
                 $('.wrapper__menu').css({display : `none`});
-                $('body').css({"overflow":"scroll"});
             }
         });
-    }
 
     var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
@@ -279,7 +269,7 @@ if (navigator.appVersion.indexOf("Mac") != -1) {
     if ($('.scroll-body').length > 0) { scroll(); }
 }
 
-/*const anchors = document.querySelectorAll('a[href^="#"]');
+const anchors = document.querySelectorAll('a[href^="#"]');
 // Цикл по всем ссылкам
 for(let anchor of anchors) {
   anchor.addEventListener("click", function(e) {
@@ -292,5 +282,5 @@ for(let anchor of anchors) {
       block: "start"
     });
   });
-}*/
+}
 
