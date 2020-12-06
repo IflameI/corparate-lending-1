@@ -51,8 +51,8 @@ a{
   text-decoration: none;
 }
 #wrapper__numbers{
-     padding-top: 210px;
-    margin-top: -210px;
+        padding-top: 150px;
+    margin-top: -150px;
 
 }
 .item__title_z{
@@ -386,8 +386,12 @@ a{
     font-size: 51px;
   }
   .wrapper__services .services{
-    padding-top: 135px !important;
+        padding-top: 85px !important;
+    margin-top: -85px;
   }
+}
+.aboutus .aboutus__main .aboutus__jumbotron .content__mousescroll{
+  padding-bottom: 90px;
 }
 .aboutus .aboutus__main .aboutus__nav .nav__links {
   display: -webkit-box;
@@ -655,7 +659,7 @@ a{
   justify-content: space-between;
 }
 .wrapper__services .services {
-  padding-top: 137px;
+  padding-top: 57px;
 }
 .wrapper__services .services__items {
   margin-top: 82px;
@@ -717,7 +721,7 @@ a{
 }
 .wrapper__choise .choise__content {
   position: relative;
-  padding-top: 120px;
+  padding-top: 60px;
 }
 .wrapper__choise .choise__content .content {
   display: -webkit-box;
@@ -921,8 +925,8 @@ a{
   color: #F4522F;
 }
 .wrapper__contacts {
-     padding-top: 120px;
-    margin-top: -120px;
+     padding-top: 80px;
+    margin-top: -80px;
 }
 .wrapper__contacts .contacts__background .circle {
   left: -505px;
@@ -944,7 +948,7 @@ a{
 }
 @media(max-width: 700px){
   .wrapper__contacts .contacts {
-    padding-top: 85px;
+    padding-top: 25px;
   }
 }
 .wrapper__contacts .contacts .contacts__content {
@@ -2765,8 +2769,8 @@ body {
   margin-top: 0px;
   padding-top: 50px;
 }
-.aboutus .aboutus__main .aboutus__jumbotron .content__mousescroll{
-  padding-bottom: 0px;
+.wrapper__numbers .numbers{
+  padding-top: 140px;
 }
 .wrapper__form .h2__title{
  padding-top: 15%;
@@ -3568,6 +3572,10 @@ body {
 @media(max-width: 768px){
   .wrapper__contacts{
     padding-top: 50px;
+  }
+  #wrapper__numbers{
+        padding-top: 90px;
+    margin-top: -90px;
   }
   .wrapper__numbers .numbers .content__img{
     margin-bottom: 40px;
